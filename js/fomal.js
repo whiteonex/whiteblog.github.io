@@ -874,12 +874,12 @@ function createtime1() {
 
   var ascll = [
     `欢迎来到`,
-    `你好可爱の小家!`,
+    `whiteの小家!`,
     `山水一程，三生有幸✨`,
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2023 By Darling",
+    "©2024 By white",
   ];
 
   setTimeout(
@@ -997,8 +997,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| 你好可爱") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('你好可爱的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    var subTitle = title.endsWith("| white") ? title.substring(0, title.length - 14) : title;
+    navigator.clipboard.writeText('white的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
       data: function () {
         this.$notify({
@@ -1876,7 +1876,7 @@ if ((lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九")) {
   }
 }
 
-if ((lunar["IMonthCn"] == "五月" && lunar["IDayCn"] == "廿五")) {
+if ((lunar["IMonthCn"] == "五月" && lunar["IDayCn"] == "初九")) {
   //站长生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("祝站长" + (y - 2002).toString() + "岁生日快乐！🎂");
@@ -1993,11 +1993,11 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var start = new Date("05/14/2023 00:00:00"); // 旅行者1号开始计算的时间
+  var start = new Date("06/29/2024 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("05/14/2023 00:00:00");
+  var grt = new Date("06/29/2024 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,

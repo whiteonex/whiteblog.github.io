@@ -1,5 +1,5 @@
 // 设置变量（不同的时间传入方式）
-let target_time1 = new Date("2020/11/08");
+let target_time1 = new Date("2021/08/25");
 // let target_time2 = new Date("2023/07/12");
 // let target_time3 = new Date("2023/10/01");
 // var target_time = new Date();
